@@ -1,0 +1,31 @@
+---
+- name: Install and configure Squid
+  hosts: web
+  become: yes
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+      become: yes
+
+    - name: Install Squid
+      apt:
+        name: squid
+        state: present
+      become: yes
+
+    - name: Configure Squid
+      template:
+        src: squid.conf.j2
+        dest: /etc/squid/squid.conf
+      become: yes
+      notify: Restart Squid
+
+  handlers:
+    - name: Restart Squid
+      service:
+        name: squid
+        state: restarted
+
+

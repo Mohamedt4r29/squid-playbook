@@ -1,5 +1,4 @@
 # squid-playbook
-The description for the GitHub repository could be something like:
 
 "Squid Playbook: An Ansible playbook for installing and configuring Squid proxy server on a Linux machine.
 

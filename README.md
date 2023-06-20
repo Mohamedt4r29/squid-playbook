@@ -1,19 +1,40 @@
 # squid-playbook
 
-"Squid Playbook: An Ansible playbook for installing and configuring Squid proxy server on a Linux machine.
+This repository contains an Ansible playbook for automating the installation and configuration of Squid proxy server on Linux machines.
 
-This playbook automates the installation of the Squid package, ensures that the Squid service is enabled and running, and configures the Squid proxy server according to the provided settings.
+# Prerequisites
 
-Feel free to use and modify this playbook to suit your needs.
+Ansible: Ensure that Ansible is installed on the control machine.
+Target Machines: Make sure you have target machines running a Linux distribution where you want to install and configure Squid.
 
-Contributions and feedback are welcome!
+# Usage
 
-Instructions:
 
-Clone the repository.
-Adjust the inventory file (inventory.ini) to specify the target machine(s) where Squid should be installed.
-Customize the Squid configuration file (squid.conf.j2) to match your requirements.
-Run the playbook using the 'ansible-playbook' command, passing the inventory and playbook files as arguments.
-For more information and usage examples, please refer to the README file.
+1 - Clone the repository to your local machine.
 
-Happy proxying!"
+2 - Update the inventory.ini file with the IP addresses or hostnames of your target machines.
+
+3 - Customize the squid.conf.j2 template file if needed to adjust Squid's configuration.
+
+4 - Run the playbook using the following command:
+
+    ansible-playbook -i inventory.ini squid-playbook.yml
+
+5 - Sit back and relax as Ansible takes care of installing and configuring Squid on the target machines.
+
+
+# Contributing
+
+If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+# License
+
+This project is licensed under the MIT License.
+
+
+# Acknowledgements
+
+
+We would like to thank the Institute of Computer Science for providing us with the opportunity to work on this project.
+
+Feel free to modify and customize the content based on your specific project details and requirements.

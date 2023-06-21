@@ -35,6 +35,6 @@ This project is licensed under the MIT License.
 # Acknowledgements
 
 
-We would like to thank the Institute of Computer Science for providing us with the opportunity to work on this project.
+I would like to thank the Institute of Computer Science for providing us with the opportunity to work on this project.
 
 Feel free to modify and customize the content based on your specific project details and requirements.
